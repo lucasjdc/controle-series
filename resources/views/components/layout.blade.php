@@ -7,15 +7,12 @@
     <meta name="description" content="Lista de séries cadastradas">
     <meta name="author" content="Lucas Costa">
 
-    <title>Series</title>
+    <title>{{ $title }} - Controle de Séries</title>
 </head>
 <body>
-<h1>Séries</h1>
+<h1>{{ $title }}</h1>
 
-<ul>
-    @foreach ($series as $serie)
-    <li>{{  $serie }}</li>
-    @endforeach
-</ul>
+{{ $slot }}
+
 </body>
 </html>
